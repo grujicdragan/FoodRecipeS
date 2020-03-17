@@ -1,0 +1,130 @@
+
+    <h1>Meals</h1>
+    <div *ngFor="let item of meals">
+        <div *ngFor="let subItem of item.meals | paginate: { itemsPerPage: 1, currentPage: p }">
+            <h2>{{ subItem.strMeal }}
+                <span>
+                    <a href="#"><i class="fa fa-trash-o pull-right trash"></i></a>
+                    <a href="#"><i class="fa fa-pencil pull-right pencil"></i></a>
+                </span>
+            </h2>
+            <table id="customers">
+                <tr>
+                    <th>ID</th>
+                    <td>{{ subItem.idMeal }}</td>
+                </tr>
+                <tr>
+                    <th>Meal</th>
+                    <td>{{ subItem.strMeal }}</td>
+                </tr>
+                <tr>
+                    <th>Drink Alternate</th>
+                    <td>{{ subItem.strDrinkAlternate }}</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>{{ subItem.strCategory }}</td>
+                </tr>
+                <tr>
+                    <th>Area</th>
+                    <td>{{ subItem.strArea }}</td>
+                </tr>
+                <tr>
+                    <th>Instructions</th>
+                    <td>{{ subItem.strInstructions }}</td>
+                </tr>
+                <tr>
+                    <th>Tags</th>
+                    <td>{{ subItem.strTags }}</td>
+                </tr>
+                <tr>
+                    <th>YouTube</th>
+                    <td>{{ subItem.strYoutube }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 1</th>
+                    <td>{{ subItem.strIngredient1 }}</td> 
+                </tr>
+                <tr>
+                    <th>Ingredient 2</th>
+                    <td>{{ subItem.strIngredient2 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 3</th>
+                    <td>{{ subItem.strIngredient3 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 4</th>
+                    <td>{{ subItem.strIngredient4 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 5</th>
+                    <td>{{ subItem.strIngredient5 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 6</th>
+                    <td>{{ subItem.strIngredient6 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 7</th>
+                    <td>{{ subItem.strIngredient7 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 8</th>
+                    <td>{{ subItem.strIngredient8 }}</td>
+                </tr>
+                <tr>
+                    <th>Ingredient 9</th>
+                    <td>{{ subItem.strIngredient9 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 1</th>
+                    <td>{{ subItem.strMeasure1 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 2</th>
+                    <td>{{ subItem.strMeasure2 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 3</th>
+                    <td>{{ subItem.strMeasure3 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 4</th>
+                    <td>{{ subItem.strMeasure4 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 5</th>
+                    <td>{{ subItem.strMeasure5 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 6</th>
+                    <td>{{ subItem.strMeasure6 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 7</th>
+                    <td>{{ subItem.strMeasure7 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 8</th>
+                    <td>{{ subItem.strMeasure8 }}</td>
+                </tr>
+                <tr>
+                    <th>Measure 9</th>
+                    <td>{{ subItem.strMeasure9 }}</td>
+                </tr>
+                <tr>
+                    <th>Source</th>
+                    <td>{{ subItem.strSource }}</td>
+                </tr>
+                <tr>
+                    <th>Date Modified</th>
+                    <td>{{ subItem.dateModified }}</td>
+                </tr>
+            </table>
+            <div style="margin-left: 75%; margin-top: 10px;" class="pag">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,9 @@
+.cnt {
+    position: relative;
+    min-height: 100vh;
+} 
+
+.wrp {
+    padding-bottom: 60px;
+}
+

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+
+.container {
+  margin-top: 0 !important;
+  padding-top: 0px;
+}
+
+#customers {
+    font-family: "Montserrat" , sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 7px 7px 5px rgb(94, 94, 94);
+  }
+  
+#customers td, #customers th {
+    border: 2px solid white;
+    box-shadow: black;
+    padding: 4px  8px;
+  }
+  
+#customers tr {
+  /* background-color: rgb(246, 101, 37, .5); */
+  background-color: transparent;
+  color: black;
+}
+  
+#customers tr:hover {background-color: rgba(221, 221, 221, 0.548);}
+  
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    /* background-image: linear-gradient(to right, #f66525, #bd4333, #7e2b30, #401a21, #000000);    /* background: rgb(160,154,242); */
+    /* background: linear-gradient(90deg, rgba(160,154,242,1) 0%, rgba(189,186,186,1) 84%, rgba(183,188,189,1) 100%); */
+    color: black;
+    font-weight: 1000;
+  }
+
+h2 {
+    margin-left: 100px;
+    color: black;
+    padding: 25px;
+    font-family: "Montserrat" , sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    z-index: 1;
+  }
+
+h1 {
+    color: black;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 100px; 
+    line-height: 160px; 
+    font-weight: normal; 
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+    text-align: center; 
+    text-shadow: 0 5px 5px rgb(94, 94, 94);
+    }
+
+.trash {
+  color: black;
+  transition: all 0.7s ease 0s;
+}
+
+.trash:hover {
+  color: black;
+  transform: scale(1.2, 1.2);
+  transition: all 0.7s ease 0s;
+}
+
+.pencil {
+  color: black;
+  transition: all 0.7s ease 0s;
+}
+
+.pencil:hover {
+  transition: all 0.7s ease 0s;
+  transform: scale(1.2, 1.2);
+}
+
+
+
+.yes-button {
+  width: 150px;
+  color: #ddd;
+}
+
+.no-button {
+  color: #ddd;
+  width: 150px;
+}
+
+.pag /deep/ .ngx-pagination .current {
+  background: black;
+}

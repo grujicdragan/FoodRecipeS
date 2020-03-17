@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Categories</h1>
+        <div *ngFor="let item of categories">
+            <div *ngFor="let subItem of item.categories | paginate: { itemsPerPage: 5, currentPage: p }">
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom:8px  !important;">
+                        <a href="#"><i class="fa fa-trash-o pull-right trash"></i></a>
+                        <a href="#"><i class="fa fa-pencil pull-right pencil"></i></a>
+                    </div>
+                        <div class="col-md-6 center" style="margin: auto;">
+                            <img style="margin-left: 80px;" src={{subItem.strCategoryThumb}} alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <table id="customers">
+                            <tr>
+                                <th>Category</th>
+                                <td>{{ subItem.strCategory }}</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>{{ subItem.strCategoryDescription }}</td>
+                            </tr>
+                        </table>
+                        </div><!-- end of colmd6 -->
+                    </div><!-- end of row -->
+                </div><!-- end of ngfor2 -->
+            </div><!-- end of ngfor1 -->
+    <div style="margin-left: 70%; margin-top: 10px;">
+        <pagination-controls (pageChange)="p = $event" class="pag"></pagination-controls>
+    </div>
+</div>

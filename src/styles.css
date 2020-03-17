@@ -1,0 +1,8 @@
+body {
+    background-color: #d3d3d3;
+    /* background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), 
+    url(https://live.staticflickr.com/3284/2536005489_426b7d2a7c_b.jpg);
+    background-attachment: scroll; */
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
