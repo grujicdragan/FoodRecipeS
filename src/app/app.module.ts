@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { AlertModule } from 'ngx-bootstrap';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,7 +36,8 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserAnimationsModule,
     MatIconModule,
     ModalModule.forRoot(),
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
