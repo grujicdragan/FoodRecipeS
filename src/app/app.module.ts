@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { AlertModule } from 'ngx-bootstrap';
 
 
@@ -17,6 +17,7 @@ import { CategoryComponent } from './components/category-component/category/cate
 import { HomeComponentComponent } from './components/home-component/home-component.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MaterialModule } from './material/material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { MaterialModule } from './material/material.module';
     MatIconModule,
     ModalModule.forRoot(),
     AlertModule.forRoot(),
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
