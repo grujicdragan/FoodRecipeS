@@ -1,0 +1,30 @@
+[debug] [2020-04-03T12:35:28.537Z] ----------------------------------------------------------------------
+[debug] [2020-04-03T12:35:28.539Z] Command:       C:\Program Files\Nodejs\node.exe C:\Users\draga\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-04-03T12:35:28.539Z] CLI Version:   8.0.0
+[debug] [2020-04-03T12:35:28.539Z] Platform:      win32
+[debug] [2020-04-03T12:35:28.539Z] Node Version:  v12.15.0
+[debug] [2020-04-03T12:35:28.540Z] Time:          Fri Apr 03 2020 14:35:28 GMT+0200 (Central European Summer Time)
+[debug] [2020-04-03T12:35:28.540Z] ----------------------------------------------------------------------
+[debug] [2020-04-03T12:35:28.540Z] 
+[debug] [2020-04-03T12:35:28.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-03T12:35:28.547Z] > authorizing via signed-in user
+[debug] [2020-04-03T12:35:28.547Z] [iam] checking project foodapplicationtest for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-04-03T12:35:28.550Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/foodapplicationtest:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2020-04-03T12:35:29.522Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 03 Apr 2020 12:35:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=824","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-03T12:35:29.524Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/foodapplicationtest  
+ 
+[debug] [2020-04-03T12:35:29.825Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 03 Apr 2020 12:35:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'foodapplicationtest'...
+[info] 
+[info] i  deploying database
+[info] i  database: checking rules syntax...
+[debug] [2020-04-03T12:35:29.834Z] >>> HTTP REQUEST PUT https://foodapplicationtest.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2020-04-03T12:35:30.561Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Fri, 03 Apr 2020 12:35:29 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}

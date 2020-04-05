@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'meals', component: MealComponent },
   { path: 'category', component: CategoryComponent },
   { path: ' ', redirectTo: '/home'},
-  { path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({

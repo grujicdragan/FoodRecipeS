@@ -17,6 +17,7 @@ import { ModalModule } from 'ngx-bootstrap';
 import { CategoryComponent } from './components/category-component/category/category.component';
 import { HomeComponentComponent } from './components/home-component/home-component.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MatIconModule,
     ModalModule.forRoot(),
     AlertModule.forRoot(),
-    MatPaginatorModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
