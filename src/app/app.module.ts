@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { AlertModule } from 'ngx-bootstrap';
-import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 import { AppRoutingModule } from './app-routing.module';
